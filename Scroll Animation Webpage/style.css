@@ -1,0 +1,110 @@
+html{
+	/* Set height of the html page to 100% of the browser height */
+	height: 100%;
+	/* Hide horizontal scroll */
+	overflow-x: hidden;
+	font-family: 'Apple Chancery', cursive;
+}
+
+body{
+	/* Set height of the body to 100% -- separated out of html to allow scrollTo animation */
+	height: 100%;
+	margin: 0px;
+}
+
+/* 
+Navigation Bar 
+*/
+#nav{
+	/* Fix navigation bar at the top middle of the web page */
+    position: fixed;
+    /* calc() CSS function calculates numbers of different units */
+    left: calc(50% - 50px);
+    top: 20px;
+    /* Display nav bar on top of everything else */
+    z-index: 1;
+}
+
+.nav-btn{
+	width: 20px;
+    height: 20px;
+    background-color: purple;
+    border: 1px solid black;
+    display: inline-block;
+    cursor: pointer;
+    /* transition changes in background-color */
+    transition: background-color 0.8s;
+}
+
+/* When a nav-btn is hovered on, set background-color to blue */
+.nav-btn:hover{
+	background-color: blue;
+}
+
+/* 
+Parallax: joi and dunes sections;
+*/
+#joi, #dunes{
+	/* Set height of div to 100% */
+	height: 100%;
+	/* The bottom three background CSS settings create parallax effect */
+	background-attachment: fixed;
+	background-size: cover;
+	background-position: center;
+}
+
+#joi{
+	/* Set background image of joi section using url() function */
+	background-image: url('img/joi.jpg');
+}
+
+#dunes{
+	/* Set background image of dunes section using url() function */
+	background-image: url('img/dunes.jpg');
+}
+
+/* 
+poster1 div along side text1 section
+*/
+#poster1-div{
+    position: relative;
+    width: 410px;
+    text-align: left;
+/*    top: calc(100% - 300px);
+    left: calc(50% - 75px);*/
+}
+
+#poster1{
+	width: 350px;
+	margin-top: 10px;
+}
+
+/* 
+poster2 div along side text2 section
+*/
+#poster2-div{
+    position: relative;
+    width: 410px;
+    text-align: left;
+/*    left: calc(50% - 90px);*/
+}
+
+#poster2{
+    width: 350px;
+    margin-top: 10px;
+}
+
+/* 
+Text sections after joi and dunes sections
+*/
+.text-section{
+	/* place text in the center-right of browser using flexbox */
+	height: 100%;
+	display: flex;
+	justify-content: right;
+	align-items: center;
+}
+
+.text{
+	width: 50%;
+}
