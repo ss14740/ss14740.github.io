@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>D2 in the Summer</title>
+	<link href="style.css" rel="stylesheet">
+</head>
+<body>
+	<!-- Navigation bar -->
+	<div id="nav">
+		<!-- link to divs on the same page using their id names -->
+		<a href="#poster"><div class="nav-btn" id="first-page"></div></a>
+		<a href="#movieclips"><div class="nav-btn" id="second-page"></div></a>
+		<a href="#creators"><div class="nav-btn" id="third-page"></div></a>
+	</div>
+	<!-- 
+	Three full browser size sections:
+	1. Poster and description 
+	2. Clips from movie 
+	3. Description of creators 
+	 -->
+	<div id="poster" class="text-section1">
+		<!--  poster div and text beside it-->
+		<div id="img1-div">
+			<img id="img1" src="img/img1.jpg">
+		</div>
+		<p class="text">D2 in the Summer follow Fatima, a student at NYUAD in the summertime. She is walking towards the dining hall, also known as D2, and contemplates purchasing an acai, a summer refresher. However, upon reaching the door, she discovers it has closed for the summer. Disheartened, she walks away into the blazing heat, surrounded by palm trees and the picturesque scenery of campus.</p>
+	</div>
+	<div id="movieclips">
+    <!-- four clips from the movie -->
+	    <div id="vid1-div">
+			<video id="vid1" class="vid" muted loop>
+			    <source src="img/vid1.mov" type="video/mp4">
+			</video>
+		</div>
+	    <div id="vid2-div">
+			<video id="vid2" class="vid" muted loop>
+			    <source src="img/vid2.mov" type="video/mp4">
+			</video>
+		</div>
+	    <div id="vid3-div">
+			<video id="vid3" class="vid" muted loop>
+			    <source src="img/vid3.mov" type="video/mp4">
+			</video>
+		</div>
+	    <div id="vid4-div">
+			<video id="vid4" class="vid" muted loop>
+			    <source src="img/vid4.mov" type="video/mp4">
+			</video>
+		</div>		
+	</div>
+	<div id="creators" class="text-section2">
+	<!-- text about creators -->
+		<p class="text">Fatima, Aisha, and Sunny worked collaboratively on this short film. They chose the subject of D2, as it is the most frequented dining hall on campus, and its closure resulted in the surprise and dismay of many. Fatima stars as the student who we follow. The creators used many still shots of nature, such as the greenery, sky, and cat. They showed the serene nature of campus, and contrasted it with the dining hall inconvenience.</p>
+	</div>
+<script>
+    // Get the video element
+    var vid1 = document.getElementById("vid1");
+
+    // video plays when mouse hovers 
+    vid1.addEventListener("mouseenter", function() {
+        vid1.play();
+    });
+
+    // video pauses when mouse leaves
+    vid1.addEventListener("mouseleave", function() {
+        vid1.pause();
+    });
+</script>
+
+<script>
+    var vid2 = document.getElementById("vid2");
+
+    vid2.addEventListener("mouseenter", function() {
+        vid2.play();
+    });
+
+    vid2.addEventListener("mouseleave", function() {
+        vid2.pause();
+    });
+</script>
+
+<script>
+    var vid3 = document.getElementById("vid3");
+
+    vid3.addEventListener("mouseenter", function() {
+        vid3.play();
+    });
+
+    vid3.addEventListener("mouseleave", function() {
+        vid3.pause();
+    });
+</script>
+
+<script>
+    var vid4 = document.getElementById("vid4");
+
+    vid4.addEventListener("mouseenter", function() {
+        vid4.play();
+    });
+
+    vid4.addEventListener("mouseleave", function() {
+        vid4.pause();
+    });
+</script>
+</body>
+</html>

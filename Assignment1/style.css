@@ -1,0 +1,133 @@
+html{
+	/* Set height of the html page to 100% of the browser height */
+	height: 100%;
+	/* Hide horizontal scroll */
+	overflow-x: hidden;
+	font-family: 'Apple Chancery', cursive;
+}
+
+body{
+	/* Set height of the body to 100% */
+	background-color: lightsteelblue;
+	height: 100%;
+	margin: 0px;
+}
+
+/* 
+Navigation Bar 
+*/
+#nav{
+	/* Fix navigation bar at the top middle of the web page */
+    position: fixed;
+    /* calc() CSS function calculates numbers of different units */
+    left: calc(50% - 50px);
+    top: 20px;
+    /* Display nav bar on top of everything else */
+    z-index: 1;
+}
+
+.nav-btn{
+	width: 20px;
+    height: 20px;
+    background-color: lightyellow;
+    display: inline-block;
+    cursor: pointer;
+    /* transition changes in background-color */
+    transition: background-color 0.8s;
+}
+
+/* When a nav-btn is hovered on, set background-color to blue */
+.nav-btn:hover{
+	background-color: orange;
+}
+
+
+/* 
+img1 div along side text section
+*/
+#img1-div{
+    position: relative;
+    width: 600px;
+/*    top: calc(100% - 300px);
+    left: calc(50% - 75px);*/
+}
+
+#img1{
+	width: 450px;
+	margin-top: 10px;
+}
+
+
+/*
+videos from film display two by two
+*/
+#vid1-div{
+    position: relative;
+    left: 120px;
+}
+
+#vid1{
+    width: 550px;
+    margin-top: 10px;
+}
+
+#vid2-div{
+    position: relative;
+    left: 750px;
+}
+
+#vid2{
+    width: 550px;
+    margin-top: -470px;
+}
+
+#vid3-div{
+    position: relative;
+    left: 120px;
+}
+
+#vid3{
+    width: 550px;
+    margin-top: 10px;
+}
+
+#vid4-div{
+    position: relative;
+    left:750px;
+}
+
+#vid4{
+    width: 550px;
+    margin-top: -430px;
+}
+
+/* 
+Text section on the first page 
+*/
+.text-section1{
+	/* place text in the center-right of browser using flexbox */
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	right: 100px;
+}
+
+.text{
+	width: 35%;
+}
+
+/* 
+Text section on the last page 
+*/
+.text-section2{
+	/* place text in the center-right of browser using flexbox */
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.text{
+	width: 35%;
+}
