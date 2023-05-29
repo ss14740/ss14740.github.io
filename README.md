@@ -1,0 +1,7 @@
+# ss14740.github.io/Assignment1/
+My project is called D2 in the Summer, which is a movie that follows Fatima and her journey involving D2. I used HTML, JavaScript, and CSS to create a website showcasing the shortfilm. 
+This site has three pages, which can be discovered by scrolling or clicking the buttons at the top navigation bar. 
+The first pages showcases the movie poster, which includes the title, and a description of the movie's events. The second page shows four clips from the movie that begin playing when the mouse hovers over them, and the last page shows a descriptions of the creators and their vision.
+I wanted the theme of the website to be calming, which is why I chose pastel colors. I was striving to create a positive and easy-to-navigate experience for the viewer, and so I made the website have a simple and clean look.
+I chose a color scheme and stuck to three simple colors, and I tried to make all the elements fit on the website harmoniously. I used HTML to implement all the elements such as photos, videos and texts. Then I used JavaScript to add an element of interaction by allowing the user to play and stop the videos. Lastly, I used CSS to design all the elements of the website
+I was pleased that I met my goals from the wireframe, and implemented all the elements I wanted to. I did not expect the roadbloacks I had when trying to figure out JavaScript. I am pleased with the final result, but I want to keep working on the website to perfect it more.
