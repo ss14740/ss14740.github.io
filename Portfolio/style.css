@@ -1,0 +1,263 @@
+/* website body/color */
+body, ul {
+  margin: 0;
+  padding: 10px;
+  background-color:#EEE2DC;
+}
+
+/* navigation bar */
+header {
+  background-color: #AC3B61;
+  padding: 10px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  display: flex;
+  justify-content: center; 
+}
+
+nav ul {
+  background-color: #AC3B61;
+  list-style-type: none;
+  display: flex; 
+  justify-content: center; 
+}
+
+nav ul li {
+  background-color: #AC3B61;
+  display: inline;
+  margin-right: 10px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #EDC7B7; 
+  font-size: 20px;
+  padding: 5px;
+}
+
+/* Title for sections */
+.section-title {
+  font-size: 48px;
+  color: #123C69;
+  margin-top: -150px;
+  margin-bottom: 40px;
+  text-align: left;
+}
+
+.section-subtitle {
+  font-size: 24px;
+  color: #123C69;
+  margin-top: -20px;
+  margin-bottom: 0;
+  text-align: right;
+  animation: fade 2s infinite;
+}
+
+/* Subtitle animation */
+@keyframes fade {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+/* Background design */
+.section-stripe1 {
+  background-color: #EDC7B7;
+  padding: 20px;
+  position: fixed;
+  top: 200px;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center; 
+}
+
+.section-stripe2 {
+  background-color: #AC3B61;
+  padding: 20px;
+  position: fixed;
+  top: 400px;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center; 
+}
+
+.section-stripe3 {
+  background-color: #EDC7B7;
+  padding: 20px;
+  position: fixed;
+  top: 600px;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center; 
+}
+
+.section-stripe4 {
+  background-color: #123C69;
+  padding: 3px;
+  position: fixed;
+  top: 250px;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center; 
+}
+
+.section-stripe5 {
+  background-color: #123C69;
+  padding: 3px;
+  position: fixed;
+  top: 540px;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center; 
+}
+
+/* style of home page */
+#home {
+  padding: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  position:relative;
+}
+
+#home.image-card {
+  position: absolute;
+  width: 150%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform 0.9s ease;
+}
+
+/* style of creators page */
+#creators {
+  padding: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  position:relative;
+
+}
+
+#creators .image-card {
+  position: absolute;
+  width: 150%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform 0.9s ease;
+}
+
+#creators .text-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px 20px;
+  margin-left: 200px;
+}
+
+#creators .text-grid .text-box {
+  outline: 4px solid #123C69;
+}
+
+/* style of process page */
+#process {
+  padding: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+
+#process .image-item {
+  width: 300px;
+  height: 400px;
+  margin: 50px;
+  margin-top: 50px;
+  position: relative;
+  perspective: 1000px;
+  cursor: pointer;
+}
+
+/* consistent elements across all pages */
+/* titles, image changing function, texts */
+#image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  width: 100%;
+}
+
+.image-item {
+  width: 300px;
+  height: 400px;
+  margin: 15px;
+  position: relative;
+  perspective: 1000px;
+  cursor: pointer;
+}
+
+.image-front,
+.image-back {
+  outline: none;
+  border: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.image-back {
+  border: 4px solid transparent;
+  display: none;
+}
+
+.image-front img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+/* Hover effect for image-front */
+.image-item:hover .image-front img {
+  transform: scale(1.1);
+}
+
+/* Hover effect for image-back */
+.image-item:hover .image-back {
+  transform: scale(1.1);
+}
+
+.image-item.clicked .image-back {
+  border-color: #123C69;
+  background-color: #EDC7B7;
+}
+
+.text-box {
+  background-color: #EDC7B7;
+  padding: 20px;
+  text-align: center;
+  color: #123C69;
+}
+
+.text-box h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.text-box p {
+  font-size: 16px;
+  margin-bottom: 0;
+}
